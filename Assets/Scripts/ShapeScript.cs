@@ -4,15 +4,7 @@ using UnityEngine;
 
 public class ShapeScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public float getValue(float x, float z) {
+        return 7 * ( x / 5 ) * ( z / 5 ) / Mathf.Exp(( x / 5 ) * ( x / 5 ) + ( z / 5 ) * ( z / 5 ));
     }
 }
